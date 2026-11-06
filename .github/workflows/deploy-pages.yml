@@ -27,6 +27,7 @@ jobs:
         run: |
           mkdir -p dist
           cp index.html dist/index.html
+          cp -R supabase dist/supabase
           touch dist/.nojekyll
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
