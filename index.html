@@ -10,32 +10,48 @@ button:disabled{opacity:.48;cursor:not-allowed;filter:saturate(.55)}
 .field input:focus,.field select:focus,.field textarea:focus{outline:2px solid #9bc879;border-color:#789b70}
 .links button{font-weight:650}
 #adminMessage,#partnerMessage,#setupMessage{border-radius:12px}
+/* Responsive layout: prevent navigation and content from crossing viewport edges */
+html{width:100%;overflow-x:hidden;scroll-behavior:smooth}
+body{width:100%;min-width:0;overflow-x:hidden}
+header{z-index:20}
+.wrap{width:100%;min-width:0}
+.nav,.links{min-width:0}
+.links button{min-width:0}
+img,svg,video,iframe{max-width:100%}
+input,select,textarea{max-width:100%;min-width:0}
+.panel,.card,.summary,.stat,.field{min-width:0}
+.table-wrap{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
 @media(max-width:760px){
-.hero-grid,.grid{grid-template-columns:1fr}
-.cards{grid-template-columns:repeat(2,minmax(0,1fr))}
-.stats{grid-template-columns:repeat(2,minmax(0,1fr))}
-.nav{align-items:flex-start;flex-direction:column;gap:10px}
-.links{width:100%;display:flex;flex-wrap:wrap;gap:6px;overflow:visible}
-.links button{flex:1 1 auto;white-space:nowrap;padding:10px 11px;font-size:14px}
-.art{min-height:220px}
+ .hero-grid,.grid{grid-template-columns:minmax(0,1fr)}
+ .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .nav{display:flex;align-items:flex-start;flex-direction:column;gap:12px}
+ .links{display:grid;width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;overflow:visible}
+ .links button{width:100%;min-height:42px;padding:9px 8px;white-space:normal;overflow-wrap:anywhere;text-align:center;font-size:14px;line-height:1.2}
+ .art{min-height:220px}
 }
 @media(max-width:480px){
-.cards,.two{grid-template-columns:1fr}
-.wrap{padding:0 14px}
-.hero{padding:36px 0}
-.card,.panel{padding:16px}
-.view{padding:26px 0 42px}
-.head{margin-bottom:16px}
-.head h2{line-height:1.12}
-#view-admin .panel:first-of-type .two{grid-template-columns:1fr;gap:0}
-#view-admin .actions,#view-partner .actions{display:grid;grid-template-columns:1fr;gap:9px}
-#view-admin .actions .btn,#view-partner .actions .btn{width:100%}
-.stats{gap:8px}
-.stat{padding:12px}
-.stat b{font-size:21px}
+ .wrap{padding-left:14px;padding-right:14px}
+ .hero{padding:34px 0}
+ .view{padding:24px 0 40px}
+ .cards,.two{grid-template-columns:minmax(0,1fr)}
+ .card,.panel{padding:15px}
+ .head{margin-bottom:16px}
+ .head h2{font-size:29px;line-height:1.12;overflow-wrap:anywhere}
+ .field input,.field select,.field textarea{width:100%;min-height:44px;font-size:16px}
+ .field textarea{min-height:90px}
+ .actions{gap:8px}
+ .actions .btn{max-width:100%;white-space:normal}
+ #view-admin .panel:first-of-type .two{grid-template-columns:minmax(0,1fr);gap:0}
+ #view-admin .actions,#view-partner .actions{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+ #view-admin .actions .btn,#view-partner .actions .btn{width:100%}
+ .stats{gap:8px}
+ .stat{padding:11px}
+ .stat b{font-size:21px}
+ .summary{width:100%}
+ .table-wrap table{min-width:620px}
 }
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
-
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 </style></head><body>
 <header><div class="wrap nav"><div class="brand"><span class="mark">N</span> NIVORA</div><nav class="links"><button class="active" data-view="home">Home</button><button data-view="book">Book a service</button><button data-view="admin">Admin</button><button data-view="partner">Partner portal</button><button data-view="setup">Connect backend</button></nav></div></header>
 <section class="hero" id="hero"><div class="wrap hero-grid"><div><div class="eyebrow">MUMBAI HOME SERVICES</div><h1>Home care, made simpler.</h1><p>Discover local home services, request a convenient slot and let our coordinator confirm the right service partner and final quotation.</p><div class="actions"><button class="btn primary" onclick="show('book')">Request a service</button><button class="btn light" onclick="show('setup')">Connect backend</button></div><p class="notice">Pilot marketplace · No online payment · Final quotation confirmed before booking</p></div><div class="art"><div class="tile one"><div style="font-size:28px">🧽</div><b>Home cleaning</b><small>Fresh spaces, less effort</small></div><div class="tile two"><div style="font-size:28px">🛠️</div><b>Repairs & maintenance</b><small>Local service partners</small></div></div></div></section>
