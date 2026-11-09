@@ -78,3 +78,7 @@ Keep future schema changes as new timestamped migrations under `supabase/migrati
 - Partner approval is admin-only and uses an atomic database function.
 - Customer booking tracking returns a restricted projection only.
 - Preserve existing tables and rows when applying future migrations.
+
+### Historical migration markers
+
+The first three migration files are no-op markers because their original SQL predates repository migration control and was not recoverable from the live migration ledger. Their resulting schema/security state is represented by the idempotent live schema baseline that follows. These markers preserve exact applied version ordering without inventing or replaying historical DDL. The remaining migration files contain the SQL for the corresponding applied changes.
