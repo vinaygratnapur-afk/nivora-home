@@ -1,0 +1,4 @@
+-- Historical migration marker for the existing Nivora database.
+-- Original SQL predates repository migration control and is not reconstructed here.
+-- Its live schema/security effects are captured by the idempotent 20261106192838_nivora_live_schema_baseline.sql snapshot.
+-- Intentionally no-op: do not replay guessed or destructive historical DDL.
