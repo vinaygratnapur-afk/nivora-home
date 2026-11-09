@@ -1,0 +1,4 @@
+-- Historical migration marker for the existing Nivora database.
+-- Original SQL predates repository migration control and is not reconstructed here.
+-- Current booking RLS policies are captured by the live schema baseline and later policy migrations.
+-- Intentionally no-op: do not replay guessed historical DDL.
