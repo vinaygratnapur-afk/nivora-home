@@ -54,6 +54,101 @@ input,select,textarea{max-width:100%;min-width:0}
  .table-wrap table{min-width:620px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* NIVORA SIGNATURE UI — layered, editorial, premium service experience */
+:root{
+ --ink:#102f2a;--lime:#d9f0ad;--cream:#f5f6f1;--muted:#718078;--line:#e3e9e2;
+ --mint:#e7f0e7;--gold:#d9b77b;--deep:#0b211e;--shadow:0 24px 70px rgba(15,48,41,.12);
+ --shadow-soft:0 12px 34px rgba(15,48,41,.075)
+}
+body{background:radial-gradient(ellipse at 8% 5%,#e8f0e6 0,transparent 32%),linear-gradient(180deg,#f8f9f5 0%,#f1f4ee 100%);color:#20352f;letter-spacing:-.012em}
+header{background:rgba(12,43,37,.96)!important;backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.12);box-shadow:0 8px 30px rgba(7,28,24,.16)}
+.nav{max-width:1180px;min-height:68px}
+.brand{font-size:23px;letter-spacing:.12em}.mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(145deg,#e7f5c9,#b9d78c);box-shadow:inset 0 1px 0 #fff,0 7px 18px #0002}
+.links{gap:6px}.links button{border:1px solid transparent;border-radius:999px;padding:10px 15px;color:#dce9e2;transition:all .22s ease}
+.links button.active,.links button:hover{background:rgba(224,242,203,.14);border-color:rgba(224,242,203,.2);color:#f3f8ec;box-shadow:inset 0 1px 0 #ffffff20}
+.wrap{max-width:1180px;padding-left:24px;padding-right:24px}
+.hero{position:relative;isolation:isolate;overflow:hidden;padding:78px 0 84px;background:radial-gradient(ellipse at 82% 18%,rgba(178,205,150,.22),transparent 33%),radial-gradient(ellipse at 5% 100%,rgba(82,130,103,.25),transparent 42%),linear-gradient(125deg,#0b2823 0%,#153e34 56%,#204d3d 100%)}
+.hero:before{content:"";position:absolute;z-index:-1;width:560px;height:560px;border:1px solid #d8edb51c;border-radius:50%;right:-120px;top:-290px;box-shadow:0 0 0 45px #d8edb50b,0 0 0 95px #d8edb508}
+.hero:after{content:"";position:absolute;z-index:-1;width:340px;height:340px;border-radius:50%;right:24%;bottom:-280px;background:#c5e2a51c;filter:blur(3px)}
+.hero-grid{grid-template-columns:1.05fr .95fr;gap:62px;max-width:1180px}
+.eyebrow{font-size:10px;letter-spacing:.22em;color:#cde6a9}
+.hero h1{max-width:650px;font-size:clamp(48px,6.8vw,78px);line-height:.99;letter-spacing:-.065em;margin:18px 0 20px;text-wrap:balance}
+.hero p{max-width:540px;font-size:17px;line-height:1.8;color:#d4e3da}
+.hero .notice{font-size:11px;color:#aebfb5;margin-top:18px}
+.hero .actions{margin-top:26px}.btn{border-radius:999px;padding:14px 23px;min-height:50px;letter-spacing:-.01em;box-shadow:0 5px 14px #061b1720}
+.primary{background:linear-gradient(135deg,#e5f6c8,#c8e49e);box-shadow:0 10px 25px #b9d78c28}.primary:hover{transform:translateY(-2px);box-shadow:0 15px 30px #b9d78c38}
+.light{background:#ffffff12;color:white;border:1px solid #ffffff38;backdrop-filter:blur(10px)}.light:hover{background:#ffffff22}
+.dark{background:linear-gradient(135deg,#173f35,#0d2e27);color:#fff}.dark:hover{box-shadow:0 12px 24px #173d3533;transform:translateY(-2px)}
+.outline{border:1px solid #dce6dc;background:linear-gradient(180deg,#fff,#f7faf6)}.outline:hover{border-color:#a9c39e;background:#f4f9ef}
+.art{min-height:360px;border:1px solid #ffffff55;border-radius:34px;background:radial-gradient(circle at 75% 20%,#fff9 0 2%,transparent 20%),linear-gradient(145deg,#e6f0df 0%,#b9d0b5 50%,#8eaf9b 100%);box-shadow:0 30px 80px #061d1745,inset 0 1px 0 #fff;overflow:hidden}
+.art:before{content:"";position:absolute;width:250px;height:250px;border:1px solid #fff8;border-radius:50%;right:13%;top:50px;box-shadow:0 0 0 22px #ffffff25,0 0 0 48px #ffffff18}
+.art:after{content:"N";position:absolute;right:40px;top:10px;font-size:230px;font-weight:900;line-height:1;color:#173d3510;letter-spacing:-.12em}
+.tile{z-index:1;width:210px;border:1px solid #ffffffc9;border-radius:22px;padding:20px;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);box-shadow:0 22px 45px #173d3522}
+.one{top:52px;left:34px;transform:rotate(-6deg)}.tile-two{right:28px;bottom:36px;transform:rotate(5deg)}
+.tile b{font-size:16px;letter-spacing:-.03em}.tile small{color:#718078}
+.view{padding:62px 0 78px}.head{margin-bottom:28px}.head h2{font-size:clamp(34px,4vw,48px);letter-spacing:-.055em;line-height:1.05;margin:12px 0}.head .muted{max-width:680px;font-size:15px}
+.cards{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.card,.panel{border:1px solid rgba(222,231,221,.9);border-radius:24px;background:linear-gradient(155deg,rgba(255,255,255,.98),rgba(250,252,248,.94));box-shadow:var(--shadow-soft);transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease}
+.card{min-height:230px;padding:23px;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,#cce5a5,#86ad8d);opacity:.9}
+.card:after{content:"";position:absolute;width:120px;height:120px;right:-60px;top:-65px;border-radius:50%;background:#eaf2e5}
+.card:hover{transform:translateY(-7px);box-shadow:0 24px 50px rgba(15,48,41,.13);border-color:#c8d9c4}
+.card h3{position:relative;z-index:1;font-size:19px;letter-spacing:-.035em;margin:16px 0 7px}
+.card p{font-size:13px;line-height:1.65}.card .actions{position:relative;z-index:1;margin-top:auto}
+.card .price{font-size:14px;background:#edf4e9;padding:7px 10px;border-radius:999px}
+.panel{padding:26px}.panel h3{letter-spacing:-.035em;font-size:20px}
+.grid{grid-template-columns:minmax(0,1.2fr) minmax(260px,.65fr);gap:22px;align-items:start}
+.field{gap:9px;margin-bottom:17px}.field label{font-size:12px;letter-spacing:.025em;color:#52665c}
+.field input,.field select,.field textarea{border:1px solid #dce5dc;border-radius:13px;padding:14px 15px;background:#fbfcfa;transition:border-color .2s,box-shadow .2s,background .2s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:#8fb18a;box-shadow:0 0 0 4px #cfe3c344;background:#fff}
+.summary{position:sticky;top:20px;border:1px solid #dbe6d8;border-radius:22px;background:linear-gradient(155deg,#edf5e9,#f8faf5);padding:24px;box-shadow:inset 0 1px 0 #fff,0 14px 35px #173d350b}
+.summary h3{font-size:19px;letter-spacing:-.03em;color:var(--ink)}
+.line{padding:13px 0;border-bottom:1px solid #d6e2d3}
+.msg{border:1px solid #d6e7ce;background:#f0f7eb;border-radius:13px;padding:14px 16px}
+.error{border-color:#f0d5d1;background:#fff1ef}
+.stats{gap:14px;margin:22px 0}.stat{border:1px solid #e1e9df;border-radius:18px;background:linear-gradient(145deg,#f5f8f2,#eaf1e7);padding:18px;box-shadow:inset 0 1px 0 #fff}.stat b{font-size:27px;letter-spacing:-.05em}
+.table-wrap{border:1px solid #e8ede7;border-radius:15px}
+table{min-width:700px}th{background:#f6f8f4;letter-spacing:.06em;text-transform:uppercase;font-size:10px}td{font-size:13px}
+footer{background:radial-gradient(ellipse at 80% 0%,#315e4c,#0b2823 55%);padding:42px 0;border-top:1px solid #ffffff20}
+footer .wrap{max-width:1180px}
+#view-home .panel{background:linear-gradient(120deg,#eaf3e6,#f9fbf7);padding:28px 30px}
+#view-home .panel h3{font-size:23px;margin:0 0 8px}
+#view-track .panel{max-width:700px}
+#view-admin .panel,#view-partner .panel{box-shadow:0 18px 48px #173d3510}
+:focus-visible{outline:3px solid #9bc879;outline-offset:3px}
+@media(max-width:900px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-grid{gap:30px}.art{min-height:300px}}
+@media(max-width:760px){
+ .wrap{padding-left:18px;padding-right:18px}
+ .hero{padding:55px 0 60px}.hero-grid{gap:30px}
+ .hero h1{font-size:clamp(43px,10vw,60px)}
+ .art{min-height:270px}.one{left:20px;top:35px}.tile-two{right:18px;bottom:25px}
+ .view{padding:42px 0 55px}
+ .nav{align-items:flex-start}
+ .links{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .links button{font-size:12px;padding:9px 6px}
+ .grid{grid-template-columns:minmax(0,1fr)}
+ .summary{position:static}
+}
+@media(max-width:480px){
+ .wrap{padding-left:15px;padding-right:15px}
+ .brand{font-size:20px}
+ .hero{padding:42px 0 46px}.hero h1{font-size:46px}
+ .hero p{font-size:15px}
+ .hero .actions{display:grid;grid-template-columns:1fr}
+ .hero .actions .btn{width:100%}
+ .art{min-height:235px;border-radius:25px}
+ .tile{width:175px;padding:15px;border-radius:18px}
+ .tile b{font-size:14px}.one{left:13px;top:28px}.tile-two{right:12px;bottom:18px}
+ .cards{grid-template-columns:minmax(0,1fr);gap:13px}
+ .card{min-height:190px;padding:21px}
+ .panel{padding:18px;border-radius:20px}
+ .head h2{font-size:34px}
+ .links{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .stats{gap:9px}.stat{padding:13px}.stat b{font-size:23px}
+ .summary{padding:18px}
+}
+@media(prefers-reduced-motion:reduce){.card,.btn,.links button{transition:none!important}}
 </style></head><body>
 <header><div class="wrap nav"><div class="brand"><span class="mark">N</span> NIVORA</div><nav class="links"><button class="active" data-view="home">Home</button><button data-view="book">Book a service</button><button data-view="track">Track booking</button><button data-view="admin">Admin</button><button data-view="partner">Partner portal</button><button data-view="setup">Connect backend</button></nav></div></header>
 <section class="hero" id="hero"><div class="wrap hero-grid"><div><div class="eyebrow">MUMBAI HOME SERVICES</div><h1>Home care, made simpler.</h1><p>Discover local home services, request a convenient slot and let our coordinator confirm the right service partner and final quotation.</p><div class="actions"><button class="btn primary" onclick="show('book')">Request a service</button><button class="btn light" onclick="show('setup')">Connect backend</button></div><p class="notice">Pilot marketplace · No online payment · Final quotation confirmed before booking</p></div><div class="art"><div class="tile one"><div style="font-size:28px">🧽</div><b>Home cleaning</b><small>Fresh spaces, less effort</small></div><div class="tile tile-two"><div style="font-size:28px">🛠️</div><b>Repairs & maintenance</b><small>Local service partners</small></div></div></div></section>
