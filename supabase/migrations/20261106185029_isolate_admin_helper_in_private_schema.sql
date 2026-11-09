@@ -1,0 +1,4 @@
+-- Historical migration marker for the existing Nivora database.
+-- Original SQL predates repository migration control and is not reconstructed here.
+-- The current private.is_nivora_admin helper and grants are captured by the live schema baseline.
+-- Intentionally no-op: do not replay guessed historical DDL.
